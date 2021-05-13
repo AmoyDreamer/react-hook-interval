@@ -3,7 +3,7 @@
  * @desc A component of react-hook based on setInterval and clearInterval that supports multi-interval management.
  */
 import { useRef, useEffect } from 'react'
-export default (props) => {
+export default () => {
     const ids = useRef([])
     //set interval
     function setInterval() {
