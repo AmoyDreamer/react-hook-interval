@@ -16,6 +16,7 @@
     "hook",
     "react hooks",
     "setInterval",
+    "clearInterval",
     "useInterval",
     "interval"
   ],
