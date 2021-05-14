@@ -24,7 +24,7 @@ module.exports = {
             version: "detect"
         }
     },
-    // 自定义的规则
+    //Custom rules
     rules: {
         "indent": ["error", "tab", { "SwitchCase": 1 }],//The default indentation identifies TAB, use one tab in SwitchCase
         "quotes": ["warn", "single"],//Single quotation marks are recommended
