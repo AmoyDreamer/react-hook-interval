@@ -4,7 +4,8 @@
   "description": "A component of React Hook based on setInterval and clearInterval that supports multi-interval management.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint ./src/index.js --fix"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,8 @@
     "react": ">=16.8.0"
   },
   "devDependencies": {
+    "eslint": "^7.26.0",
+    "eslint-plugin-react": "^7.23.2",
     "react": "^17.0.2"
   }
 }

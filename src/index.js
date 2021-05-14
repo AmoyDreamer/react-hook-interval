@@ -4,31 +4,32 @@
  */
 import { useRef, useEffect } from 'react'
 export default () => {
-    const ids = useRef([])
-    //set interval
-    function setInterval() {
-        let id = window.setInterval.apply(null, arguments)
-        ids.current.push(id)
-        return id
-    }
-    //clear interval
-    function clearInterval(id) {
-        for (let i = 0, len = ids.current.length; i < len; i++) {
-            if (ids.current[i] == id) {
-                window.clearInterval(id)
-                ids.current.splice(i, 1)
-                break
-            }
-        }
-    }
-    useEffect(() => {
-        return () => {
-            //remove all
-            ids.current.length > 0 && ids.current.map(window.clearInterval)
-        }
-    }, [])
-    return {
-        setInterval,
-        clearInterval
-    }
+	const ids = useRef([])
+	//set interval
+	function setInterval() {
+		let id = window.setInterval.apply(null, arguments)
+		ids.current.push(id)
+		return id
+	}
+	//clear interval
+	function clearInterval(id) {
+		if (typeof id !== 'number') return
+		for (let i = 0, len = ids.current.length; i < len; i++) {
+			if (ids.current[i] == id) {
+				window.clearInterval(id)
+				ids.current.splice(i, 1)
+				break
+			}
+		}
+	}
+	useEffect(() => {
+		return () => {
+			//remove all
+			ids.current.length > 0 && ids.current.map(window.clearInterval)
+		}
+	}, [])
+	return {
+		setInterval,
+		clearInterval
+	}
 }
