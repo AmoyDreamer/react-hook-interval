@@ -12,12 +12,12 @@
     "url": "git+https://github.com/AmoyDreamer/react-hook-interval.git"
   },
   "keywords": [
-    "setInterval",
-    "useInterval",
-    "interval",
     "react",
     "hook",
-    "react hooks"
+    "react hooks",
+    "setInterval",
+    "useInterval",
+    "interval"
   ],
   "author": "Allen Liu",
   "license": "MIT",
