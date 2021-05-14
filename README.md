@@ -17,7 +17,7 @@ export default function myComponent() {
     let id = setInterval(() => {
         console.log(Date.now());
         clearInterval(id)
-    }, 5000)
+    }, 5000);
 }
 ```
 ### Description

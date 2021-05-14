@@ -12,7 +12,8 @@ module.exports = {
         es6: true
     },
     plugins: [
-        "react"
+        "react",
+        "react-hooks"
     ],
     extends: [
         "eslint:recommended",
@@ -54,6 +55,8 @@ module.exports = {
         "react/react-in-jsx-scope": "off",//Prevent missing React when using JSX
         "react/prop-types": "off",//Prevent missing props validation in a React component definition
         "react/jsx-key": "off",//Detect missing key prop
-        "react/no-string-refs": "off"//Prevent using string references
+        "react/no-string-refs": "off",//Prevent using string references
+        "react-hooks/rules-of-hooks": "error",//Check hook rule
+        "react-hooks/exhaustive-deps": "warn"//Check effect dependencies
     }
 }
