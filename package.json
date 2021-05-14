@@ -19,7 +19,14 @@
     "url": "https://github.com/AmoyDreamer/react-hook-interval/issues"
   },
   "homepage": "https://github.com/AmoyDreamer/react-hook-interval#readme",
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
   "devDependencies": {
-    "react": "^16.14.0"
+    "react": "^17.0.2"
   }
 }
